@@ -10,9 +10,12 @@ body {
  
 h1 {
     text-align: center;
-    color: #000000;  
+    color: #f2efef;  
     margin-bottom: 30px;
+    background-color: #521362;
+    border-radius: 5rem;
     font-size: 2.2em;
+    font-family: 'Source Code Pro', monospace;
 }
 
 header {
@@ -34,7 +37,18 @@ h2 {
     margin-bottom: 10px;
      text-decoration: underline;
 }
-
+ 
+h3 {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: #c642eb;
+  text-align-last: center;
+  font-style: oblique;
+  border-radius: 4rem;
+  display: inline-block; 
+  padding: 0.5rem 1rem; 
+  margin: 1rem 0;
+  
+}
  
 p,a {
     color:black;  
@@ -53,7 +67,7 @@ div:hover {
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #40cfc5;
+    background-color:  #781b91;
     width: 100%;
     z-index: 1000;
     padding: 0.5rem 1rem;
@@ -78,7 +92,7 @@ div:hover {
   
   .nav-list li {
     margin: 0;
-    color: #cdc0b3;
+    color: #ece4dc;
   }
   
   .nav-list a {
@@ -101,19 +115,43 @@ div:hover {
     line-height: 1.6;
   }
   a.members {
-    color: #007BFF; /* Initial link color */
-    text-decoration: none; /* Remove underline by default */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
-    font-weight: bold; /* Optional: Make it bold */
+    color: #161718;
+    text-decoration: none; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-weight: bold;
 }
 
-a.member:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: underline; /* Add underline on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+h2 {
+  font-family: 'Montserrat', sans-serif; 
+  text-align: center;
+  color: #4a4a4a; 
+  margin-bottom: 0.5rem; 
 }
 
-a:active {
-    color: #003d7a; /* Even darker shade when clicked */
-    text-decoration: none; /* Remove underline on active state */
+.members {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+ 
+}
+
+.members h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none; 
+  color: #4a4a4a; 
+  display: inline-block; 
+  padding: 0.8rem 1.2rem; 
+  border-radius: 8px; 
+  background-color: #f8f9fa; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease;
+  margin-top: 0.5rem; 
+}
+
+.members h3:hover {
+  background-color: #d238e7; 
+  color: #212529; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
