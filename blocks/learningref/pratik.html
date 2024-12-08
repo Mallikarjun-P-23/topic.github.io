@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #fcfdff;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+       
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fefeff;
+            background-color: #521362;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #091624;
+            padding: 10px;
+            background-color: #65047e;
+            border-radius: 4px;
+            color: #eceff2;
+        }
+        h3 {
+            margin-top: 20px;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 15px 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #dfe6ed;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        p {
+            margin: 15px 0;
+        }
+        strong {
+            color: #343a40;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e3ceec;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .note {
+            font-size: 0.9em;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6da4de;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #868e96;
+        }
+    .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #781b91;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+ 
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .nav-list li {
+    margin: 0;
+    color: #866545;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: FB5235;
+    align-content: center;
+    padding: 1rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    transform: scale(1.02);  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+  }
+  
+  .content {
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a style="color:rgb(255, 255, 255)"  href="/blocks/home/home.html">Home</a></li>
+            <li><a style="color:rgb(255, 255, 255)"  href="/index.html">PROJECT OVERVIEW</a></li>
+            <li><a  style="color:rgb(253, 251, 251)" href="/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+  <section>
+    <div class="container">
+        <h1>Data Structures and Algorithms Summary</h1>
+
+        <h2>1. Problems in Nature</h2>
+        <ul>
+            <li><strong>Iteration:</strong> (repeating a process): Growth of trees, water cycle, migration of birds.</li>
+            <li><strong>Recursion:</strong>  (output becomes input for the next step): Mountain ranges, blood vessels.</li>
+            <li><strong>Backtracking:</strong> (revisiting previous steps): Bees searching for flowers (pollination).</li>
+        </ul>
+
+        <h2>2. Space and Time Efficiency</h2>
+        <ul>
+            <li><strong>Space Efficiency:</strong> Amount of time an algorithm takes to execute as a function of the input size.</li>
+            <li><strong>Time Efficiency:</strong> Amount of memory or storage an algorithm requires during execution.</li>
+        </ul>
+        <h3>Order of Growth:</h3>
+        <ul>
+            <li><code>O(1)</code> - Constant</li>
+            <li><code>O(n)</code> - Linear</li>
+            <li><code>O(n^3)</code> - Cubic</li>
+            <li><code>O(log n)</code> - Logarithmic</li>
+            <li><code>O(n^2)</code> - Quadratic</li>
+            <li><code>O(n log n)</code> - Linearithmic</li>
+            <li><code>O(n^k)</code> - Polynomial</li>
+            <li><code>O(2^n)</code> - Exponential</li>
+            <li><code>O(n!)</code> - Factorial</li>
+        </ul>
+        <div class="note">
+            <p><strong>Best Case:</strong> Minimum time required under optimal conditions.</p>
+            <p><strong>Average Case:</strong> Expected time over all possible inputs.</p>
+            <p><strong>Worst Case:</strong> Maximum time required.</p>
+        </div>
+
+        <h2>3. Design Principles (from Chapter 2)</h2>
+        <p>Sorting algorithms aim to reduce the number of comparisons, similar to graph algorithms where we aim to minimize operations like pathfinding or traversing.</p>
+
+        <h2>4. Tree Data Structures</h2>
+        <ul>
+            <li><strong>BST (Binary Search Tree):</strong> Left child &lt; root &lt; right child.</li>
+            <li><strong>AVL:</strong> Self-balancing with rotations to keep height balanced.</li>
+            <li><strong>2-3 Tree:</strong> A variant of BST where nodes can have two or three children.</li>
+            <li><strong>Red-Black Tree:</strong> A balanced binary tree where the root is always black, and red nodes have specific properties to maintain balance.</li>
+            <li><strong>Heap:</strong> A binary tree that satisfies the heap property (parent nodes are either greater or smaller than their children).</li>
+            <li><strong>Trie:</strong> A tree-like structure used for storing words in a way that allows fast lookup based on prefixes.</li>
+        </ul>
+
+        <h2>5. Array Query Algorithms</h2>
+        <p>These algorithms are used when data is small and static, making them ideal for quick lookup operations in static datasets.</p>
+
+        <h2>6. Difference Between Tree and Graph Traversals</h2>
+        <ul>
+            <li><strong>Tree:</strong> Has a clear hierarchical structure with no cycles. Traversal methods include pre-order, in-order, post-order, and level-order.</li>
+            <li><strong>Graph:</strong> Can have cycles and complex structures. Traversal methods include DFS and BFS.</li>
+        </ul>
+        <h3>Applications:</h3>
+        <ul>
+            <li><strong>Tree:</strong> Hierarchical data, file systems, decision trees.</li>
+            <li><strong>Graph:</strong> Networks, social connections, pathfinding.</li>
+        </ul>
+
+        <h2>7. Sorting Algorithms</h2>
+        <ul>
+            <li><strong>Bubble Sort:</strong> Repeatedly compares and swaps adjacent elements. (Time Complexity: <code>O(n^2)</code>)</li>
+            <li><strong>Selection Sort:</strong> Finds the smallest element and places it in the correct position. (Time Complexity: <code>O(n^2)</code>)</li>
+            <li><strong>Insertion Sort:</strong> Efficient for partially sorted datasets. Works like card placement by gamblers. (Time Complexity: <code>O(n^2)</code>)</li>
+            <li><strong>Quick Sort:</strong> Divides the list and sorts partitions recursively. (Time Complexity: <code>O(n log n)</code>)</li>
+            <li><strong>Merge Sort:</strong> Divides and merges sorted sublists. (Time Complexity: <code>O(n log n)</code>)</li>
+            <li><strong>Heap Sort:</strong> Builds a heap and extracts the root repeatedly. (Time Complexity: <code>O(n log n)</code>)</li>
+        </ul>
+
+        <h2>8. Shortest Path Algorithms</h2>
+        <ul>
+            <li><strong>Dijkstra’s Algorithm:</strong> Provides optimal solutions for single-source shortest paths with non-negative weights.</li>
+            <li><strong>Bellman-Ford Algorithm:</strong> Handles negative weights in shortest path problems.</li>
+            <li><strong>Warshall’s Algorithm:</strong> Computes all-pairs shortest paths using bitwise operations.</li>
+            <li><strong>Kruskal’s Algorithm:</strong> Builds a minimum spanning tree by adding edges one by one. Requires cycle detection.</li>
+            <li><strong>Floyd’s Algorithm:</strong> Computes all-pairs shortest paths.</li>
+            <li><strong>Prim’s Algorithm:</strong> Constructs minimum spanning trees using edge relaxation.</li>
+            <li><strong>Depth First Search Algorithm:</strong> Traverses till the end of nodes to find paths.</li>
+        </ul>
+
+        <h2>9. Algorithm Design Techniques</h2>
+        <ul>
+            <li><strong>Brute Force:</strong> Try all possible solutions and select the best one.</li>
+            <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve them, and combine the results. (Examples: Merge Sort, Quick Sort.)</li>
+            <li><strong>Backtracking:</strong> Explore all possible solutions incrementally and abandon paths that fail constraints. (Examples: Sudoku, N-Queens Problem.)</li>
+            <li><strong>Recursion:</strong> Solve a problem by solving smaller instances of the same</li>
+        </ul>
+    </div>
+  </section>
+</body>

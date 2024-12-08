@@ -7,29 +7,26 @@
   
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #e4d5d5;
+    background-color: #fffdfd;
     margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    padding: 20px; 
     min-height: 100vh;
   }
-  
-  /* Main Container */
   section {
     align-content: center;
-    background-color: #EEDECE;
-    padding: 2rem;
+    background-color: #bcb1a6;
+    padding: 4rem;
     width: 100%;
     max-width: 1200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-left: 18%;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    border-radius: 15px;
+    margin-left: 1%;
+    margin-top: 30px;
   }
-  
-  /* Header */
+
   header {
-    background-color: #3570fb;
-    color: white;
+    background-color: #343ef2;
+    color: rgb(244, 234, 234);
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -85,17 +82,13 @@
     margin-left: 1.5rem;
     color: #666;
   }
-  
-  /* Blockquote */
   blockquote {
     font-style: italic;
-    color: #555;
+    color: #221c1c;
     border-left: 4px solid #4CAF50;
     padding-left: 1rem;
     margin-top: 2rem;
   }
-  
-  /* Responsive Design */
   @media (max-width: 600px) {
     section {
         padding: 1.5rem;
@@ -112,15 +105,12 @@
   .new{
     color: #555;
   }
- 
-  
-  
   .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;  
     object-fit: cover;
-    border: 3px solid white;
+    border: 3px solid rgb(231, 216, 216);
   }
   .team-container{
     display: flex;
@@ -139,50 +129,53 @@
     justify-content: center;
     color: #e7f7e7;
     text-decoration: underline;
-    background-color: #FB5235;
+    background-color: #7e35fb;
     width: 50%;
     border: 2px solid white;
-    border-radius: 100%;
+    border-radius: 5%;
     margin-left: 25%;
   }
-  
+
   .navbar {
     position: sticky;
     top: 0;
-    background-color: #EEDECE;
+    background-color: #40cfc5;
     width: 100%;
     z-index: 1000;
     padding: 0.5rem 1rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
+    border-radius: 10px;
     justify-content: center;
     justify-content: space-between;
   }
-
- 
-  
   .nav-list {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-content: center;
     margin: 0;
     padding: 0;
+    
   }
   
   .nav-list li {
     margin: 0;
-    color: #EEDECE;
+    color: #cdc0b3;
   }
   
   .nav-list a {
     text-decoration: none;
     color: FB5235;
-    padding: 0.5rem 1rem;
+    align-content: center;
+    padding: 1rem 1rem;
     transition: background-color 0.3s ease;
   }
   
   .nav-list a:hover {
-    background-color: #FB5235;
+    transform: scale(1.02);  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+    transition: transform 0.2s, box-shadow 0.2s;
     border-radius: 4px;
   }
   
@@ -191,3 +184,55 @@
     font-size: 1.2rem;
     line-height: 1.6;
   }
+
+ 
+
+.team-container {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;    
+    max-width: 800px;      
+    margin: 0 auto;         
+    padding: 20px;        
+}
+
+.team-member {
+    display: flex;         
+    align-items: center;   
+    margin: 15px 0;         
+    text-align: left;       
+    width: 100%;           
+}
+
+.profile-pic {
+    width: 100px;           
+    height: 100px;          
+    border-radius: 50%;    
+    margin-right: 15px;     
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    max-width: 500px;        
+}
+
+.case-study a {
+    color: #007BFF;         
+    text-decoration: none;  
+    font-size: 0.9rem;  }     
+
+.case-study a:hover {
+    text-decoration: underline; }
+section.discription{
+    align-content: center;
+    background-color: #89745f;
+    padding: 4rem;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-left: 1%;
+    margin-top: 3px;
+}
