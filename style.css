@@ -1,4 +1,4 @@
-* {
+er* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -389,7 +389,7 @@ h2:hover {
   transform: scale(1.05); 
 }
 .team-container .team-member:first-child {
-  text-align: left;
+  text-align: center;
   width: 50%;
   margin: 15px 0;
 }
