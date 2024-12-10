@@ -210,7 +210,7 @@ text-justify:inter-word;
 .team-member {
   display: flex;         
   align-items: center;   
-  margin: 15px 0;         
+  margin: 15px 6;         
   text-align: left;       
   width: 100%;           
 }
@@ -295,7 +295,7 @@ h4.dis {
 .team-member {
   background-color: #f8f9fa; 
   border-radius: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   padding: 1rem; 
   width: 250px; 
   text-align: center; 
@@ -387,4 +387,15 @@ h2:hover {
   color: #ffffff; 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
   transform: scale(1.05); 
+}
+.team-container .team-member:first-child {
+  text-align: left;
+  width: 55%;
+  margin: 15px 0;
+}
+
+.team-container .team-member:first-child .member-info {
+  width: 100%;
+  word-wrap: break-word;
+  max-width: 500px;
 }
