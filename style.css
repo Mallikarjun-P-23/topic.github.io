@@ -1,4 +1,4 @@
-er* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -388,3 +388,4 @@ h2:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
   transform: scale(1.05); 
 }
+
