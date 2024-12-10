@@ -388,14 +388,3 @@ h2:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
   transform: scale(1.05); 
 }
-.team-container .team-member:first-child {
-  text-align: center;
-  width: 50%;
-  margin: 15px 0;
-}
-
-.team-container .team-member:first-child .member-info {
-  width: 100%;
-  word-wrap: break-word;
-  max-width: 500px;
-}
