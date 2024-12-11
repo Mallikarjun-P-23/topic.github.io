@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #fcfdff;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+       
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fefeff;
+            background-color: #623913;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #091624;
+            padding: 10px;
+            background-color: #e4983c;
+            border-radius: 4px;
+            color: #000000;
+        }
+        h3 {
+            margin-top: 20px;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 15px 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #dfe6ed;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        p {
+            margin: 15px 0;
+        }
+        strong {
+            color: #343a40;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e3ceec;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .note {
+            font-size: 0.9em;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6da4de;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #868e96;
+        }
+    .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #5a2614;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+ 
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .nav-list li {
+    margin: 0;
+    color: #866545;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: FB5235;
+    align-content: center;
+    padding: 1rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    transform: scale(1.02);  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+  }
+  
+  .content {
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a style="color:rgb(255, 255, 255)"  href="/topic.github.io/blocks/home/home.html">Home</a></li>
+            <li><a style="color:rgb(255, 255, 255)"  href="/topic.github.io/index.html">PROJECT OVERVIEW</a></li>
+            <li><a  style="color:rgb(253, 251, 251)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+  <section>
+    <div class="container">
+        <h1>Data Structures and Algorithms Summary</h1>
+
+        <h2>1. Problems in Nature</h2>
+        <ul>
+            <li><strong>Iteration:</strong> (refers to repeating a set of process in a loop): mathematics,programing,cooking .</li>
+            <li><strong>Recursion:</strong>  (output becomes input for next step to solve a problem): solving puzzles,snowflakes,leaf patterns.</li>
+            <li><strong>Backtracking:</strong> (revisiting each and every step to find a solution ):n-queens problem,solving a maze.</li>
+        </ul>
+
+        <h2>2. Space and Time Efficiency</h2>
+        <ul>
+            <li><strong>Space Efficiency:</strong> it is the extra space taken by the algorithm.</li>
+            <li><strong>Time Efficiency:</strong>it is the time taken by the algorithm .</li>
+        </ul>
+        <h3>Order of Growth:</h3>
+        <ul>
+            <li><code>O(1)</code> - Constant</li>
+            <li><code>O(n)</code> - Linear</li>
+            <li><code>O(n^3)</code> - Cubic</li>
+            <li><code>O(log n)</code> - Logarithmic</li>
+            <li><code>O(n^2)</code> - Quadratic</li>
+           
+            <li><code>O(n^k)</code> - Polynomial</li>
+            <li><code>O(2^n)</code> - Exponential</li>
+            
+        </ul>
+        
+
+        <h2>3. Design Principles (from Chapter 2)</h2>
+        <p>sorting and graph algorithms helped us in priortizing efficency by optimizing  space and time complexity.</p>
+
+        <h2>4. Tree Data Structures</h2>
+        <ul>
+            <li><strong>BST (Binary Search Tree):</strong> used for hirearcheal data,left node<root node<right node.</li>
+            <li><strong>AVL:</strong> self balancing tree which balances itself by rotations according to the balance factor.</li>
+            <li><strong>2-3 Tree:</strong> derivative of BST where a tree can have more than two childrean.</li>
+            <li><strong>Red-Black Tree:</strong> A type of binary tree where the root node is always black and every other node with red , no two sucessive same colours are allowed.</li>
+            <li><strong>Heap:</strong> A heap data structure is like a priority queue which helps us access highest or lowest priority elements.</li>
+            <li><strong>Trie:</strong> A trie data structure stores a string or sequence which helps in faster operations like insertion,deletion,etc.</li>
+        </ul>
+
+        <h2>5. Array Query Algorithms</h2>
+        <p>Array query algorithms are used when you need to efficiently perform operations on data stored in an array or a sequence of elements, such as finding specific values, ranges, or performing updates..</p>
+
+        <h2>6. Difference Between Tree and Graph Traversals</h2>
+        <ul>
+            <li><strong>Tree:</strong> Tree data structure uses level order traversal method.</li>
+            <li><strong>Graph:</strong> Can have cycles and complex structures. Traversal methods include DFS and BFS.</li>
+        </ul>
+        <h3>Applications:</h3>
+        <ul>
+            <li><strong>Tree:</strong> databasing indexing,Hierarchical data, file systems, XML/HTML.</li>
+            <li><strong>Graph:</strong> search engine indexing, network flow, pathfinding.</li>
+        </ul>
+
+        <h2>7. Sorting Algorithms</h2>
+        <ul>
+            <li><strong>Bubble Sort:</strong> it compares  adjacent elements in the array and keeps swapping them repeatedly. (Time Complexity: <code>O(n^2)</code>)</li>
+            <li><strong>Selection Sort:</strong> Finds the smallest element and places it in the correct position. (Time Complexity: <code>O(n^2)</code>)</li>
+            <li><strong>Insertion Sort:</strong> Efficient for partially sorted datasets. Works like card placement by gamblers. (Time Complexity: <code>O(n^2)</code>)</li>
+            <li><strong>Quick Sort:</strong> it works by selecting a "pivot" element from the array and partitioning the other elements into two subarrays: one containing elements less than the pivot and the other containing elements greater than the pivot. The subarrays are then recursively sorted.. (Time Complexity: <code>O(n log n)</code>)</li>
+            <li><strong>Merge Sort:</strong> it is a divide and conquer sorting algorithm that divides the array into two halves, recursively sorts each half, and then merges the two sorted halves back together. (Time Complexity: <code>O(n log n)</code>)</li>
+            <li><strong>Heap Sort:</strong> it repeatedly extracts the maximum or minimum element from the heap to build the sorted array. (Time Complexity: <code>O(n log n)</code>)</li>
+        </ul>
+
+        <h2>8. Shortest Path Algorithms</h2>
+        <ul>
+            <li><strong>Dijkstra’s Algorithm:</strong> Provides optimal solutions for single-source shortest paths with non-negative weights.</li>
+            <li><strong>Bellman-Ford Algorithm:</strong> Handles negative weights in shortest path problems.</li>
+            <li><strong>Warshall’s Algorithm:</strong> Computes all-pairs shortest paths using bitwise operations.</li>
+            <li><strong>Kruskal’s Algorithm:</strong> Builds a minimum spanning tree by adding edges one by one. Requires cycle detection.</li>
+            <li><strong>Floyd’s Algorithm:</strong> Computes all-pairs shortest paths.</li>
+            <li><strong>Prim’s Algorithm:</strong> Constructs minimum spanning trees using edge relaxation.</li>
+            <li><strong>Depth First Search Algorithm:</strong> Traverses till the end of nodes to find paths.</li>
+        </ul>
+
+        <h2>9. Algorithm Design Techniques</h2>
+        <ul>
+            <li><strong>Brute Force:</strong> it tries all the possible solution then selects the best one.</li>
+            <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve them, and combine the results. (Examples: Merge Sort, Quick Sort.)</li>
+            <li><strong>Backtracking:</strong> Explore all possible solutions incrementally and abandon paths that fail constraints. (Examples: Sudoku, N-Queens Problem.)</li>
+            <li><strong>Recursion:</strong>Solve a problem by solving smaller versions of the same problem, repeating until base case</li>
+        </ul>
+    </div>
+  </section>
+  <button onclick="window.history.back();" style="background-color: #b1500b; color: rgb(241, 233, 233); border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
+</body>
