@@ -45,14 +45,59 @@
         li {
             margin-bottom: 5px;
         }
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #781b91;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .nav-list a:hover {
+            background-color: #d8a6de;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/home/home.html">Home</a></li>
+      <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/index.html">Project Introduction</a></li>
+      <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
 
 <h1>Business Case Studies with SDGs</h1>
 
 <!-- Governmental Sector Case Studies -->
 <h1>Governmental Case Study</h1>
+<h3  style="background-color: #f4f4f9; display: inline; border-radius: 2rem;"><a href="/topic.github.io/blocks/businesscases/akash2.html">click here to know more</a></h>
 <div class="case-study">
     <h3>1. Smart City Traffic Optimization and Environmental Sustainability</h3>
     <p><strong>SDG Target:</strong> <span class="sdg">SDG 11: Sustainable Cities and Communities</span>, <span class="sdg">SDG 13: Climate Action</span></p>
