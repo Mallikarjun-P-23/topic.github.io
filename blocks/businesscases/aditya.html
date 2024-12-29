@@ -1,0 +1,287 @@
+*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Summary</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #f9f9fb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #910202;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #dd1009;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #213704;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        strong {
+            color: #212529;
+        }
+
+        /* Containers */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .prat {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f2e1d2;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .agriculture {
+            background-color: #e6ffe6;
+            color: #213704;
+        }
+        
+         .agriculture h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #015a29;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .agriculture h2{
+            text-align: center;
+            margin-top: 30px;
+            background-color: #50851d;
+            padding: 10px;
+            color: #eceff2;
+            border-radius: 4px;
+            border-bottom: 4px solid #3a6715;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            padding-top:1px ;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container2 {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #eadff4;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #781b91;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .nav-list a:hover {
+            background-color: #d8a6de;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #868e96;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/home/home.html">Home</a></li>
+      <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/index.html">Project Introduction</a></li>
+      <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+    <div class="container2">
+        <button onclick="window.history.back();" style="background-color: #781b91; color: white; border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
+    <section>
+       
+        <div class="prat">
+            <h1>Transportation Modes</h1>
+            <h2>SDG Mapping</h2>
+            <div class="container">
+                <h3>SDG 3:  Ensure healthy lives and promote well-being for all at all ages </h3>
+                <p><b>Target 3.6:</b>  halve the number of global deaths and injuries from road traffic accidents .</p>
+                <ul>
+                    <li><b>Indicator 3.6.1:</b> Death rate due to road traffic injuries .</li>
+                </ul>
+                <p><b>Target 3.9:</b>  substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination .</p>
+                <ul>
+                    <li><b>Indicator 3.9.1:</b> 3.9.1 Mortality rate attributed to household and ambient air pollution.</li>
+                </ul>
+            </div>
+            <div class="container">
+                <h3>SDG 12:  Ensure sustainable consumption and production patterns </h3>
+                <p><b>Target 12.c:</b>  Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities.</p>
+                <ul>
+                    <li><b>Indicator 12.c.1:</b> Amount of fossil-fuel subsidies (production and consumption) per unit of GDP .</li>
+                </ul>
+            </div>
+            <div class="container">
+                <h3>SDG 11:  Make cities and human settlements inclusive, safe, resilient and sustainable </h3>
+                <p><b>Target 11.2:</b>  By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, 
+women, children, persons with disabilities and older persons.</p>
+                <ul>
+                    <li><b>Indicator 11.2.1:</b> Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities .</li>
+                </ul>
+                <p><b>Target 11.6:</b> By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management.</p>
+                <ul>
+                     <li><b>Indicator 11.6.1:</b> Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities .</li>
+                     <li><b>Indicator 11.6.2:</b>  Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted) .</li>
+                </ul>
+            </div>
+            <h2>PROBLEMS IN BUISSNESS CASE STUDIES AND ALGORITMS</h2>
+            <div class="container">
+                <h3>PROBLEMS IDENTIFIED:</h3>
+                <ol>
+                    <li>Traffic Movement and Congestion</li>
+                    <li>How can we create a effective parking system publically?</li>
+                </ol>
+            </div>
+            <div class="container">
+                <h3>Solutions to the above problems using Algorithms:</h3>
+                <ol>
+                    <li>One effective way to avoid traffic congestion is by creating differnt paths and multiple lanes for differnt kind of vechiles,the main objective here is to create a shortest path that can keep the traffic moving quickly and smoothly.<p>One of the efficient algorithm is <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp" >Dijkstra's Algorithm</a>.</p> </li>
+
+                    <li>To create a effective parking system publically to avoid accidents and craete a efficent space for public vehicle to move freely,to achieve this we need to organize and sort the vechile on priority order.<p>One of the efficient algorithm is <a href="/topic.github.io/blocks/businesscases/merge.cpp">MERGE SORT</a>.</p></li>
+                </ol>
+            </div>
+    </section>
+    <section>
+        
+        <div class="prat health care">
+            <h1>HEALTHCARE CASE STUDY FOR SUSTAINABLE CITY</h1>
+            <h2>SDG MAPPING</h2>
+            <div class="container">
+                <h3>SDG 3:  Ensure healthy lives and promote well-being for all at all ages </h3>
+                <p><b>Target 3.a:</b>Strengthen the implementation of the World Health Organization Framework Convention on Tobacco Control in all countries, as appropriate .</p>
+                <ul>
+                    <li><b>Indicator 3.a.1:</b> Age-standardized prevalence of current tobacco use among persons aged 15 years and older .</li>
+                </ul>
+                 <p><b>Target 3.b:</b>Support the research and development of vaccines and medicines for the communicable and non-communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines .</p>
+                <ul>
+                    <li><b>Indicator 3.b.1:</b> Proportion of the target population covered by all vaccines included in their national programme  .</li>
+                </ul>
+                <p><b>Target 3.1:</b>By 2030, reduce the global maternal mortality ratio to less than 70 per 100,000 live births  .</p>
+                <ul>
+                    <li><b>Indicator 3.1.1:</b> Maternal mortality ratio .</li>
+                </ul>
+                  <p><b>Target 3.2:</b>By 2030, end preventable deaths of newborns and children under 5 years of age, with all countries aiming to reduce neonatal mortality to at least as low as 12 per 1,000 live births and under-5 mortality to at least as low as 25 per 
+1,000 live births   .</p>
+                <ul>
+                    <li><b>Indicator 3.2.1:</b> Under-5 mortality rate  .</li>
+                </ul>
+                     <li><b>Indicator 3.2.2:</b> Neonatal mortality rate  .</li>
+                </ul
+            </div>
+            <h2>RELEVENT PROBLEMS AND ALGORITMS TO SOLVE IT</h2>
+            <div class="container">
+               <h3>PROBLEMS:</h3>
+                <strong>In our city, "SWARGANSH".</strong>
+               <ol>
+                  <li>Hospitals face a major issue of prioritizing patients based on their health conditions.A patient may require urgent medical attention but has to wait until there is someone available to attend the patient.
+Another major problem faced has to be the shortest path from the patient waiting room to the ICU's or emergency room inside the hospital as prioritizing each and every second is important </li>
+               </ol>
+            </div>
+            <div class="container">
+                <h3>ALGORITHMS TO SOLVE THE PROBLEM:</h3>
+                <ol>
+                    <li>The medical patients can be prioritized and organized based on their medical condition by using quick sort . <p>One of the efficient sorting technique is <a href="/topic.github.io/blocks/businesscases/quick.cpp"> QUICK SORT</a>.</p></li>
+                    <li>The shortest path for medical emergencies can be found out by Dijkstra's.<p>One of the efficient algorithm is <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp">Dijkstra's Algorithm</a>.</p></li>
+                </ol>
+    
+        </div>
+    </section>
+</div>
+</body>
+</html>*
