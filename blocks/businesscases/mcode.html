@@ -60,98 +60,159 @@
             color: white;
         }
         .navbar {
-  position: sticky;
-  top: 0;
-  background-color: #781b91;
-  width: 100%;
-  z-index: 1000;
-  padding: 1rem 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  border-radius: 10px;
-  justify-content: center;
+            position: sticky;
+            top: 0;
+            background-color: #781b91;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 1rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            border-radius: 10px;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0;
+            color: #cdc0b3;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 1rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            background-color: #d381e9;
+            transform: scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        .content {
+            padding: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .glow {
+    margin: 50px auto;
+    padding: 0.7em 1em;
+    width: fit-content;
+    max-width: 50%;
+    background-color: #f4f4f9;
+    text-align: center;
+    border-radius: 2rem;
+    position: relative;
+    display: inline-block;
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 0 20px 3px rgba(68, 2, 72, 0.7),  
+                0 0 60px 15px rgba(255, 0, 149, 0.5);
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  margin: 0;
-  padding: 0;
+.glow:hover {
+    background-color: #d381e9;
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 2rem;
 }
 
-.nav-list li {
-  margin: 0;
-  color: #cdc0b3;
+.glow a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
 
-.nav-list a {
-  text-decoration: none;
-  color: FB5235;
-  padding: 1rem 1rem;
-  transition: background-color 0.3s ease;
+.glow a:hover {
+    text-decoration: underline;
 }
 
-.nav-list a:hover {
-  background-color: #d381e9;
-  transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.content {
-  padding: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
     </style>
 </head>
 <body>
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/home/home.html">Home</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/index.html">Project Introduction</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+            <li><a href="/topic.github.io/blocks/home/home.html">Home</a></li>
+            <li><a href="/topic.github.io/index.html">Project Introduction</a></li>
+            <li><a href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
         </ul>
     </nav>
     
     <header>
-        <h1>Applications of Sorting and Pathfinding Algorithms</h1>
+        <h1 >Applications of Sorting and Pathfinding Algorithms</h1>
     </header>
+    
 
     <div class="container">
         <div class="section">
-            <h2>Education Sector</h2>
+            <h2>Environment sustainability</h2>
             <p>
-                In the education sector, <strong>Merge Sort</strong> is used to organize student marks efficiently and rank schools or colleges based on average performance.
+                In environmental sustainability, the main problem faced is waste management system. To resolve that and efficiently collect and transport the waste, we use <strong>Dijkstra’s Algorithm</strong>, as it is used to find the shortest path, like determining the most efficient route for delivery trucks or public transportation systems. This helps in reducing fuel consumption and carbon emissions.
             </p>
             <p>
-                code for <a href="/topic.github.io/blocks/businesscases/merge.cpp">Merge Sort</a>.
+                <img style="display: block; margin: 0 auto;" src="https://ds055uzetaobb.cloudfront.net/brioche/uploads/lessons/dijkstra-EQ50NN.gif" alt="Dijkstra's Algorithm in action on a non-directed graph"><br>
+                Explore the code for <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp">Dijkstra's Algorithm</a>.
             </p>
+            <br>
+            <br>
+            <h3 class="glow" style="background-color: #f4f4f9; display: inline; border-radius: 2rem;"><a href="/topic.github.io/blocks/businesscases/case1m.html">click here to know more</a></h>
+        
         </div>
-
+    </div>
+    
+    <div class="container">
         <div class="section">
-            <h2>Environmental Sustainability</h2>
+            <h2>Education Industry</h2>
             <p>
-                For optimizing routes and finding the shortest path, <strong>Dijkstra's Algorithm</strong> plays a crucial role in reducing carbon emissions and ensuring efficient logistics.
-            </p>
+                In the education sector, <strong>Merge Sort</strong> is used to organize student marks efficiently and rank schools or colleges based on average performance.<br>
+               It is used because  Merge Sort can handle large datasets efficiently. In educational systems with thousands of students, Merge Sort ensures that sorting operations remain manageable even as the number of students increases.
+            <br>
+            <h4>If we have 10 students with marks [82, 55, 90, 74, 63, 56, 92, 79, 68, 80], Merge Sort would sort them in ascending order so that we can easily rank the students from lowest to highest marks.</h4>
+                  </p>
             <p>
-                Explore the code for <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp" >Dijkstra's Algorithm</a>.
+                Code for <a href="/topic.github.io/blocks/businesscases/merge.cpp">Merge Sort</a>.
             </p>
+            <br>
+            <br>
+            <h3 class="glow" style="background-color: #f4f4f9; display: inline; border-radius: 2rem;"><a href="/topic.github.io/blocks/businesscases/case2m.html">click here to know more</a></h>
+        
         </div>
+    </div>
 
+   
+    <div class="container">
         <div class="section">
             <h2>Industrial Strategies</h2>
             <p>
-                In industrial strategies, <strong>Bellman-Ford Algorithm</strong> is used for scenarios with negative edge weights, such as optimizing costs, while <strong>Quick Sort</strong> is used to prioritize tasks or resources.
+                In industrial strategies, companies often have to deal with costs, pricing models, and transportation routes that might involve negative values in this cases <strong>Bellman-Ford</strong>is used in cases where some paths might have negative costs . It can handle negative weights, unlike Dijkstra’s, which can fail in such situations.. In industries, there’s often a need to prioritize tasks .<strong>Quick Sort </strong>is used to sort tasks or resources based on priority levels 
             </p>
             <p>
-                Find the code for <a href="/topic.github.io/" target="_blank">Bellman-Ford Algorithm</a> and <a href="/topic.github.io/blocks/businesscases/quick.cpp" >Quick Sort</a>.
+                <img style="display: block; margin: 0 auto;" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif" srcset="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif 1x" alt=" ">
+
+                <br>
+                Find the code for <a href="/topic.github.io/blocks/businesscases/bellmanford.cpp">Bellman-Ford Algorithm</a> and <a href="/topic.github.io/blocks/businesscases/quick.cpp">Quick Sort</a>.
             </p>
+            <br>
+            <br>
+            <h3 class="glow" style="background-color: #f4f4f9; display: inline; border-radius: 2rem;"><a href="/topic.github.io/blocks/businesscases/case3m.html">click here to know more</a></h>
         </div>
     </div>
-  <button onclick="window.history.back();" style="background-color: #781b91; color: white; border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
+
+    <div class="section">
+    </div>
+    <button onclick="window.history.back();" style="background-color: #781b91; color: white; border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
     
 </body>
 </html>
