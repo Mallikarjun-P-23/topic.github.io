@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Target 12.5: Waste Reduction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Poppins, Arial, sans-serif;
+            color: #f0f0f0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Lora', serif;
+
+            background: #0b0d15;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: rgb(43, 188, 30);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #1c1f2b;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #35fb42;
+            padding: 1rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            transform: scale(1.02);
+            background-color: #333;
+            box-shadow: 0 6px 10px rgba(175, 152, 152, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 4px;
+        }
+
+        header {
+            background: #0e0f0e;
+            color: #e2cccc;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section {
+            margin: 50px;
+            padding: 2em;
+            width: 80%;
+            max-width: 1000px;
+            background: #1c1f2b;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        .section::after, .section::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #2e76da, #ff0095, #ff4545);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: spin 3s linear infinite;
+        }
+
+        .section::before {
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+
+       /* @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+            to {
+                --angle: 360deg;
+            }
+        }
+        */
+        ul {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .media-container img, .media-container video {
+            width: 45%;
+            border-radius: 8px;
+        }
+
+        .centered-img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/topic.github.io/blocks/home/home.html">Home</a></li>
+            <li><a href="/topic.github.io/index.html">Project Introduction</a></li>
+            <li><a href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+
+    <header>
+       </header>
+
+       <button onclick="window.history.back();" 
+    style="
+        background-color: #781b91; 
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 1rem; 
+        cursor: pointer; 
+        border-radius: 5px; 
+        margin-bottom: 20px; 
+        position: fixed; 
+        left: 20px; 
+        top: 20px; 
+        z-index: 1001; /* Ensure it is above the navbar */
+        box-shadow: 0 0 10px #781b91, 0 0 20px #781b91;
+        animation: glow 1.5s infinite alternate;
+    ">
+    Back
+</button>
+
+
+    <div class="content">
+        <div class="section">
+            <h2 style="color: #db2424;"> 1 Record Management </h1>
+           <p>In educational institutions, managing student records efficiently is crucial. One way to store and manage this data is by using a file system. A file system allows for the storage of student records in a structured format within files on a computer or server. Each student's record can be stored as an individual entry, typically including 
+            details such as name, ID, grades, contact information, and courses.</p>
+
+           while adding name we can use selsction sort but best is merge sort
+           <br>
+           <br>
+            <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/selection.cpp"> selsction sort algorithm</a></h3>
+            
+        </div>
+
+
+
+
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;">Searching and arranging the records </h3>
+            <p>When searching for a specific student's record, the goal is to locate the student’s information quickly within a large 
+                set of records. Two common algorithms that can be used for searching are Knuth-Morris-Pratt
+             
+                </p>
+              
+            <br>
+             <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/KMPS.cpp">Knuth-Morris-Pratt algorithm</a></h3>
+            
+        </div>
+        
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;"> Library Management </h3>
+            <p> Managing and categorizing library resources (books, journals, e-books) by title, author, or publication date for easy search and retrieval.
+             we can use linear search 
+            <br>
+            <img src="https://sushrutkuchik.wordpress.com/wp-content/uploads/2020/05/linear_search.gif" 
+     alt="Linear Search Visualization" 
+     style="width: 300px;">
+            <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/linear.cpp">Linear search algorithm</a></h3>
+            
+        </div>
+
+    </div>
+</body>
+</html>
