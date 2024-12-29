@@ -7,7 +7,7 @@
   
   body {
     font-family: serif;
-    background-color: #f3eaea;
+    background-color: #fadddd;
     margin: 0;
     padding: 20px;
     min-height: 100vh;
@@ -94,56 +94,54 @@
   }
 
   
-  .navbar {
-    position: sticky;
-    top: 0;
-    background-color: #781b91;
-    width: 100%;
-    z-index: 1000;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    justify-content: space-between;
-  }
-
  
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-list li {
-    margin: 0;
-    color: #EEDECE;
-  }
-  
-  .nav-list a {
-    text-decoration: none;
-    color: FB5235;
-    padding: 1rem 1rem;
-    align-content: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-    transform: scale(1.02);
-    background-color: #aa49c5; 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .content {
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #781b91;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-family: serif;
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 1rem; 
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ffffff; 
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: #d381e9;
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.content {
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
   #home {
     display: inline-block; 
     font-family: 'Montserrat', sans-serif; 
