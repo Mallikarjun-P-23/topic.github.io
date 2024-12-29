@@ -20,7 +20,7 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             color: #fff;
-            background-color: #910202;
+            background-color: #1ea219;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -85,7 +85,7 @@
             color: #213704;
         }
         
-         .agriculture h1 {
+        .agriculture h1 {
             text-align: center;
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -106,6 +106,31 @@
             border-bottom: 4px solid #3a6715;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
         }
+        .container3 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-top: 1px;
+    background-color: #a6e7a7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for image and text */
+.container3 .content {
+    display: flex;
+    align-items: center; /* Vertically aligns the content */
+    gap: 20px; /* Space between the image and text */
+}
+
+/* Styling for the image */
+.left-image {
+    width: 150px; /* Adjust width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -116,13 +141,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .container2 {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #eadff4;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #dff4eb;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
         /* Navbar */
         .navbar {
             position: sticky;
@@ -172,120 +197,112 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button-container button {
+            background-color: #781b91;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #d8a6de;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <ul class="nav-list">
             <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/home/home.html">Home</a></li>
-      <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/index.html">Project Introduction</a></li>
-      <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/index.html">Project Introduction</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
         </ul>
     </nav>
     <div class="container2">
-    <button onclick="window.history.back();" style="background-color: #781b91; color: white; border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
-    <section>
-       
-        <div class="prat">
-            <h1>Marketing Strategies</h1>
-            <h2>SDG Mapping</h2>
-            <div class="container">
-                <h3>SDG 8: Decent Work and Economic Growth</h3>
-                <p><b>Target 8.2:</b> Achieve higher levels of economic productivity through diversification, technological upgrading, and innovation.</p>
-                <ul>
-                    <li><b>Indicator 8.2.1:</b> Annual growth rate of real GDP per employed person.</li>
-                </ul>
-                <p><b>Target 8.3:</b> Promote development-oriented policies that support productive activities and decent job creation.</p>
-                <ul>
-                    <li><b>Indicator 8.3.1:</b> Proportion of informal employment in non-agriculture sectors.</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>SDG 9: Industry, Innovation, and Infrastructure</h3>
-                <p><b>Target 9.3:</b> Increase the access of small-scale industrial and other enterprises to financial services, including affordable credit.</p>
-                <ul>
-                    <li><b>Indicator 19.3.1:</b> Proportion of small-scale industries in total industry value added.</li>
-                    <li><b>Indicator 19.3.2:</b> Proportion of small-scale industries with a loan or line of credit.</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>SDG 12: Responsible Consumption and Production</h3>
-                <p><b>Target 12.6:</b> Encourage companies to adopt sustainable practices and integrate sustainability information into their reporting cycle.</p>
-                <ul>
-                    <li><b>Indicator 12.6.1:</b> Number of companies publishing sustainability reports.</li>
-                </ul>
-                <p><b>Target 12.8:</b> Ensure that people everywhere have relevant information and awareness for sustainable development.</p>
-                <ul>
-                    <li><b>Indicator 12.8.1:</b> Extent to which global citizenship education and education for sustainable development are mainstreamed.</li>
-                </ul>
-            </div>
-            <h2>RELEVENT PROBLEMS AND ALGORITMS</h2>
-            <div class="container">
-                <h3>PROBLEMS:</h3>
-                <ol>
-                    <li>How can we identify the most popular or trending products that would attract customers?</li>
-                    <li>How can we find the shortest distance from the source to the destination for product delivery to enhance customer reliability?</li>
-                </ol>
-            </div>
-            <div class="container">
-                <h3>ALGORITHMS TO SOLVE THE PROBLEM:</h3>
-                <ol>
-                    <li>The main focus of marketing is understanding customer needs, which can be achieved by identifying the most popular products and advertising them effectively. This can be done by sorting products based on the highest sales, allowing you to prioritize the most in-demand items.<p>One of the efficient algorithm is <a href="/topic.github.io/blocks/businesscases/merge.cpp">MERGE SORT</a>.</p></li>
-                    <li>The market is highly competitive, and to sustain success, one must be the best service provider. To minimize customer wait times, the delivery of items must be fast. This can be achieved by identifying the shortest distance between the source and destination, ensuring quicker and more efficient deliveries.<p>One of the efficient algorithm is <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp" >Dijkstra's Algorithm</a>.</p> </li>
-                </ol>
-            </div>
-            <blockquote>"Marketing is not a task,it is an ongoing process that requires constant attention and adaption." <b>- Jay Baer</b></blockquote>
+        <div class="button-container">
+            <button onclick="window.history.back();">Back</button>
+            <button onclick="window.location.href='/topic.github.io/blocks/businesscases/market.html';">Marketing statergies</button>
         </div>
-    </section>
-    <section>
-        
-        <div class="prat agriculture">
+        <section>
             <h1>AGRICULTURAL CASE STUDY FOR SUSTAINABLE CITY</h1>
-            <h2>SDG MAPPING</h2>
-            <div class="container">
-                <h3>SDG 2: Zero Hunger</h3>
-                <p><b>Target 2.3:</b> Double the agricultural productivity and incomes of small-scale food producers.</p>
-                <ul>
-                    <li><b>Indicator 2.3.1:</b> Volume of production per labor unit by classes of farming/pastoral/forestry enterprise size.</li>
-                    <li><b>Indicator 2.3.2:</b> Average income of small-scale food producers.</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>SDG 12: Responsible Consumption and Production</h3>
-                <p><b>Target 12.3:</b> Halve global food waste at the retail and consumer levels and reduce food losses along production and supply chains.</p>
-                <ul>
-                    <li><b>Indicator 12.3.1:</b> Food loss index.</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>SDG 13: Climate Action</h3>
-                <p><b>Target 13.1:</b> Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries.</p>
-                <ul>
-                    <li><b>Indicator 13.1.1:</b> Number of deaths and affected people attributed to disasters per 100,000 population.</li>
-                </ul>
-            </div>
-            <h2>RELEVENT PROBLEMS AND ALGORITMS TO SOLVE IT</h2>
-            <div class="container">
-               <h3>PROBLEMS:</h3>
-                <strong>In our designed city, "SWARGANSH".</strong>
-               <ol>
-                  <li>We have allocated a total of 150 sq. km for agriculture. This vast area is intended for cultivating a variety of agricultural products. How can we effectively distribute these products across different categories for optimal utilization? </li>
-                  <li>We have several APMCs located across the city to facilitate the transfer of agricultural products. How can we determine the shortest path between these locations to save time and resources? </li>
-               </ol>
-            </div>
-            <div class="container">
-                <h3>ALGORITHMS TO SOLVE THE PROBLEM:</h3>
-                <ol>
-                    <li>The agricultural products can be categorized and separated based on their cost or type. This can be achieved by assigning a unique value to each agricultural product, sorting them accordingly, and then separating the unique items into distinct categories. <p>One of the efficient sorting technique is <a href="/topic.github.io/blocks/businesscases/quick.cpp"> QUICK SORT</a>.</p></li>
-                    <li>To determine the shortest path between APMCs and agricultural areas (farms).<p>One of the efficient algorithm is <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp">Dijkstra's Algorithm</a>.</p></li>
-                </ol>
 
-            </div>
-            <blockquote>"If agriculture goes wrong,nothing else will have a chance to go right." <b>- M.S.Swaminathan</b></blockquote>
+           
+                     <div class="prat agriculture">
+                <h2>SDG MAPPING</h2>
+                <div class="container">
+                    <h3>SDG 2: Zero Hunger</h3>
+                    <p><b>Target 2.3:</b> Double the agricultural productivity and incomes of small-scale food producers.</p>
+                    <ul>
+                        <li><b>Indicator 2.3.1:</b> Volume of production per labor unit by classes of farming/pastoral/forestry enterprise size.</li>
+                        <li><b>Indicator 2.3.2:</b> Average income of small-scale food producers.</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h3>SDG 12: Responsible Consumption and Production</h3>
+                    <p><b>Target 12.3:</b> Halve global food waste at the retail and consumer levels and reduce food losses along production and supply chains.</p>
+                    <ul>
+                        <li><b>Indicator 12.3.1:</b> Food loss index.</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h3>SDG 13: Climate Action</h3>
+                    <p><b>Target 13.1:</b> Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries.</p>
+                    <ul>
+                        <li><b>Indicator 13.1.1:</b> Number of deaths and affected people attributed to disasters per 100,000 population.</li>
+                    </ul>
+                </div>
+            </div><div class="prat agriculture">
+                <h2>RELEVANT PROBLEMS AND ALGORITHMS TO SOLVE IT</h2>
+                <div class="container">
+                    <h3>In our designed city, "SWARGANSH".</h3>
+                      
+                        <strong>PROBLEM:</strong><p>We have allocated a total of 150 sq. km for agriculture. This vast area is intended for cultivating a variety of agricultural products. How can we effectively distribute these products across different categories for optimal utilization? </p>
+                        <strong>SOLUTION:</strong><p>The agricultural products can be categorized and separated based on their cost or type. This can be achieved by assigning a unique value to each agricultural product, sorting them accordingly, and then separating the unique items into distinct categories. <p>One of the efficient sorting techniques is <a href="/topic.github.io/blocks/businesscases/quick.cpp"> QUICK SORT</a>.</p></p>
+                        
+                </div>
+                <div class="container">
+                        </br><strong>PROBLEM:</strong><p>We have several APMCs located across the city to facilitate the transfer of agricultural products. How can we determine the shortest path between these locations to save time and resources? </p>
     
-        </div>
-    </section>
-</div>
+                        <strong>SOLUTION:</strong><p>To determine the shortest path between APMCs and agricultural areas (farms).<p>One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/dijkstar.cpp">Dijkstra's Algorithm</a>.</p></p>
+                
+                </div>
+                <div class="container">
+                   </br><strong>PROBLEM:</strong><p>In this agricultural area, the fertility of the land varies from plot to plot. How can we properly represent the land's fertility so that we can keep track of it and suggest the most suitable crops to cultivate for each plot?</p>
+                   <strong>SOLUTION:</strong><p>The fertility of soil can be determined by ph value,NPK levels of soil.(Here is the code to find <a href="/topic.github.io/blocks/businesscases/fertility.cpp">Fertility of soil</a>.It uses <strong>Greedy,Space Time trade-off and Transform and Conquer</strong> design technique).</br>To represent this properly, we can use Trees, as they allow us to structure the data in a hierarchical manner.And if the fertility of land changes one can again sort using <a href="/topic.github.io/blocks/businesscases/heap.cpp">Heap sort</a>.<p></p>
+        
+                 </div>
+                 <div class="container">
+                  </br><strong>PROBLEM:</strong><p>Every agricultural area needs a proper water supply to sustain growth. How can we design an efficient water supply pipeline system?</p>
+
+                  <strong>SOLUTION:</strong><p>Pipelines should be installed in such a way that the cost of laying pipes is minimized while connecting all required locations. Additionally, the design should ensure that every part of the network is connected with minimal waste of resources.<p>One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/krushkal.cpp">Krushkals Algorithm</a>.</p></p>
+        
+                  </div>
+                 <div class="container">
+                   </br><strong>PROBLEM:</strong><p>Water is used for irrigation. How can we make the irrigation process more efficient without wasting water, by supplying each plot with the required amount based on its specific needs? </p>
+
+                  <strong>SOLUTION:</strong><p>The supply of water is necessary not only for irrigation but also for other areas, which is a very serious and essential problem.(Here is the code to <a href="/topic.github.io/blocks/businesscases/irrigation.cpp">Distribute the water efficiently</a>,It uses <strong>Greedy and Space and Time trade-off</strong> design technique).</p><p>The designed city of SWARGANSH spans 1500 square kilometers, with a large portion of its area designated for residential purposes. To efficiently manage this large dataset, <a href="/topic.github.io/blocks/businesscases/fertility.cpp">Merge sort</a> can be used.</p>
+                 </div>
+                 <div class="container">
+                  </br><strong>PROBLEM:</strong><p>The role of rainfall is prominent in cultivating crops. How can one determine the yield of the crops?</p>
+
+                <strong>SOLUTION:</strong><p>The effect of rainfall on crop yield can be predicted by understanding and analyzing historical records, which can help determine the outcome.(Here is the code to determine the <a href="/topic.github.io/blocks/businesscases/yield.cpp">yield</a> of the crops by taking into account the past records of yield and rainfall rates , It uses <strong>Transform and Conquer</strong> design technique).</p>
+                    
+               </div>
+                <blockquote>"If agriculture goes wrong,nothing else will have a chance to go right." <b>- M.S.Swaminathan</b></blockquote>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
-
