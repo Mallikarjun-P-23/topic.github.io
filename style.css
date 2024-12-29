@@ -41,13 +41,12 @@ header p {
   margin: 1rem 0 0;
 }
 
-/* Section Titles */
+
 h2 {
   color: #3D90D2;
   margin-bottom: 1rem;
 }
 
-/* List Items */
 ul {
   list-style: none;
   padding: 0;
@@ -71,11 +70,58 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Definition List */
 dl dt {
   font-weight: bold;
   color: #333;
   margin-top: 1rem;
+}
+
+.link-section .custom-link {
+  position: relative; 
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  background-color: #c754f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 0; 
+}
+
+.link-section .custom-link::before, 
+.link-section .custom-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(from var(--angle), #9b59b6, #5e1b7b, #6c3483, #c47ae1);
+  border-radius: 8px;
+  z-index: -1;
+  animation: spin-purple 5s linear infinite;
+  opacity: 0.7; 
+}
+
+.link-section .custom-link::before {
+  filter: blur(1.5rem);
+}
+
+@keyframes spin-purple {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.link-section .custom-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 dl dd {
@@ -146,6 +192,7 @@ text-justify:inter-word;
 }
 
 
+
 .navbar {
   position: sticky;
   top: 0;
@@ -155,38 +202,36 @@ text-justify:inter-word;
   padding: 0.5rem 1rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
+  justify-content: center; 
+  align-items: center; 
   border-radius: 10px;
-  justify-content: center;
-  justify-content: space-between;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  font-family: serif;
+  justify-content: center;
+  align-items: center; 
   margin: 0;
   padding: 0;
-  
 }
 
 .nav-list li {
-  margin: 0;
-  color: #cdc0b3;
+  margin: 0 1rem; 
 }
 
 .nav-list a {
   text-decoration: none;
-  color: FB5235;
-  align-content: center;
-  padding: 1rem 1rem;
+  color: #ffffff; 
+  padding: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .nav-list a:hover {
   background-color: #d381e9;
-  transform: scale(1.02);  
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
-  transition: transform 0.2s, box-shadow 0.2s;
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
@@ -195,8 +240,6 @@ text-justify:inter-word;
   font-size: 1.2rem;
   line-height: 1.6;
 }
-
-
 
 .team-container {
   display: flex;
