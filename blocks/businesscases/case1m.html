@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Target 12.5: Waste Reduction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Poppins, Arial, sans-serif;
+            color: #f0f0f0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Lora', serif;
+
+            background: #0b0d15;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: rgb(43, 188, 30);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #1c1f2b;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #35fb42;
+            padding: 1rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            transform: scale(1.02);
+            background-color: #333;
+            box-shadow: 0 6px 10px rgba(175, 152, 152, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 4px;
+        }
+
+        header {
+            background: #0e0f0e;
+            color: #e2cccc;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section {
+            margin: 50px;
+            padding: 2em;
+            width: 80%;
+            max-width: 1000px;
+            background: #1c1f2b;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        .section::after, .section::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #2e76da, #ff0095, #ff4545);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: spin 3s linear infinite;
+        }
+
+        .section::before {
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+
+       /* @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+            to {
+                --angle: 360deg;
+            }
+        }
+        */
+        ul {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .media-container img, .media-container video {
+            width: 45%;
+            border-radius: 8px;
+        }
+
+        .centered-img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/topic.github.io/blocks/home/home.html">Home</a></li>
+            <li><a href="/topic.github.io/index.html">Project Introduction</a></li>
+            <li><a href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+
+    <header>
+       </header>
+
+       <button onclick="window.history.back();" 
+    style="
+        background-color: #781b91; 
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 1rem; 
+        cursor: pointer; 
+        border-radius: 5px; 
+        margin-bottom: 20px; 
+        position: fixed; 
+        left: 20px; 
+        top: 20px; 
+        z-index: 1001; /* Ensure it is above the navbar */
+        box-shadow: 0 0 10px #781b91, 0 0 20px #781b91;
+        animation: glow 1.5s infinite alternate;
+    ">
+    Back
+</button>
+
+
+    <div class="content">
+        <div class="section">
+            <h2 style="color: #db2424;"> 1.Substantially Reduce Waste Generation</h1>
+           <p>in our city design the dumping area ia outside the residential area to transport and collect the waste we apply the shortest path algorithms <br>
+               <br>Now let use consider a case of some small part of area (Gandhi Nagar)of 0.7 sq.kms whixh has at lest of 500 houses and each has 4-6 mrmbers accourding to the data  </p>
+               <table border="1">
+  <thead>
+    <tr style="background-color: #ed7878;">
+      <th>Category</th>
+      <th>Value</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Waste Generation for Gandhi Nagar -->
+    <tr>
+      <td><strong>Waste Generation for Gandhi Nagar</strong></td>
+      <td colspan="2" style="text-align:center;">(2,500 people)</td>
+    </tr>
+    <tr>
+      <td>Total Waste Generated Daily</td>
+      <td>~1.875 tons/day</td>
+      <td>0.75 kg/person/day × 2,500 people</td>
+    </tr>
+    <tr>
+      <td>Organic/Biodegradable</td>
+      <td>~1,125 kg/day (1.125 tons/day)</td>
+      <td>60% of total waste generated</td>
+    </tr>
+    <tr>
+      <td>Plastics</td>
+      <td>~281 kg/day (0.281 tons/day)</td>
+      <td>15% of total waste generated</td>
+    </tr>
+   
+    <tr>
+      <td>Metals, Glass, and Others</td>
+      <td>~188 kg/day (0.188 tons/day)</td>
+      <td>10% of total waste generated</td>
+    </tr>
+    
+
+
+    <tr>
+      <td><strong>Waste Collection for Gandhi Nagar</strong></td>
+      <td colspan="2" style="text-align:center;">(2,500 people)</td>
+    </tr>
+    <tr>
+      <td>Waste Collection Points/Bins</td>
+      <td>~10 bins</td>
+      <td>Assuming 1-2 bins per house for local collection</td>
+    </tr>
+   
+    <tr>
+      <td>Collection Vehicles</td>
+      <td>~2-3 vehicles</td>
+      <td>------</td>
+    </tr>
+    <tr>
+      <td>Collection Efficiency</td>
+      <td>~90%</td>
+      <td>------</td>
+    </tr>
+
+    <!-- Waste Segregation for Gandhi Nagar -->
+    <tr>
+      <td><strong>Waste Segregation for Gandhi Nagar</strong></td>
+      <td colspan="2" style="text-align:center;">(2,500 people)</td>
+    </tr>
+    <tr>
+      <td>Segregated Waste at Source</td>
+      <td>~50%</td>
+      <td>Estimated households/businesses segregating waste</td>
+    </tr>
+    <tr>
+      <td>Recycling and Composting</td>
+      <td>~0.75 tons/day</td>
+      <td>Total waste diverted to recycling/composting (40%)</td>
+    </tr>
+  </tbody>
+</table>
+  
+       <br>
+       
+           <p>For the above data ,to store the data we use file system or Mat table to store the data <br>
+            for mat table code clicke here <h3> <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/mat.cpp">Mat table</a></h3></p>
+
+
+        </div>
+
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;"> Waste Movement Management </h3>
+            <p>The waste collected from Gandhi Nagar is transported using Dijkstra's Algorithm,
+                 where the area is represented as a graph with nodes for waste bins, collection points, and processing facilities . The algorithm calculates the shortest or most efficient routes
+                  based on factors like distance or time, ensuring optimal transport of waste types to their respective destinations .
+                </p>
+
+            <br><div class="media-container">
+                <img src="https://ds055uzetaobb.cloudfront.net/brioche/uploads/lessons/dijkstra-EQ50NN.gif" alt="Dijkstra's Algorithm in action on a non-directed graph">
+                <video src="/image/Screen Recording 2024-12-27 133755.mp4" controls></video>
+            </div>
+             <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/dijkstar.cpp">Dijkstar algorithm</a></h3>
+            
+        </div>
+        
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;"> Water Management </h3>
+            <p>Consider for the same area we are required to supply  water to that are  ,to supply water we apply Breadth-First Search (BFS). It is used to traverse the network graph systematically, 
+                where nodes represent reservoirs, pipelines, or demand points, and edges represent water connections. BFS ensures water reaches all nodes by finding the shortest or most efficient paths in terms of connections. 
+                This is especially useful for detecting connectivity issues, identifying flow paths, or ensuring water supply reaches all demand points in a network.</p>
+
+            <br><div class="media-container">
+                <img style="display: block; margin: 0 auto;"" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif?20100504223639" 
+          alt="Breadth-First Search Algorithm" style=" display: 300px;"></div>
+             <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/BSF.cpp"">BSF algorithm</a></h3>
+            
+        </div>
+
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;">Managing Huge amount of records </h3>
+            <p>For managing records, Binary Search String Search is applied to efficiently search and retrieve records . When a query string is provided,
+                 BSSS uses binary search to compare the query with the middle record, narrowing the search range by half with each step. This process ensures fast and accurate retrieval of records
+                  in large datasets, minimizing search time while maintaining precision.</p>
+             <br> 
+             <p> and we can use  insertion sort for storing the dat in sorted order</p><br>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" srcset="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif 1x" alt=" ">
+           
+             <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/insertionsort.cpp">insertion sort algorithm</a></h3>
+             <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/BSST.cpp">BSSF algorithm</a></h3>
+            
+        </div>
+       
+            
+
+    </div>
+</body>
+</html>

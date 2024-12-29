@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Target 12.5: Waste Reduction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Poppins, Arial, sans-serif;
+            color: #f0f0f0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Lora', serif;
+
+            background: #0b0d15;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: rgb(43, 188, 30);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #1c1f2b;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #35fb42;
+            padding: 1rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            transform: scale(1.02);
+            background-color: #333;
+            box-shadow: 0 6px 10px rgba(175, 152, 152, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 4px;
+        }
+
+        header {
+            background: #0e0f0e;
+            color: #e2cccc;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section {
+            margin: 50px;
+            padding: 2em;
+            width: 80%;
+            max-width: 1000px;
+            background: #1c1f2b;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        .section::after, .section::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #2e76da, #ff0095, #ff4545);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: spin 3s linear infinite;
+        }
+
+        .section::before {
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+
+       /* @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+            to {
+                --angle: 360deg;
+            }
+        }
+        */
+        ul {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .media-container img, .media-container video {
+            width: 45%;
+            border-radius: 8px;
+        }
+
+        .centered-img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 8px;
+        }
+        
+       
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 10px #781b91, 0 0 20px #781b91;
+        }
+        to {
+            box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/topic.github.io/blocks/home/home.html">Home</a></li>
+            <li><a href="/topic.github.io/index.html">Project Introduction</a></li>
+            <li><a href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+       </ul>
+    </nav>
+
+    <header>
+       </header>
+
+       <button onclick="window.history.back();" 
+    style="
+        background-color: #781b91; 
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 1rem; 
+        cursor: pointer; 
+        border-radius: 5px; 
+        margin-bottom: 20px; 
+        position: fixed; 
+        left: 20px; 
+        top: 20px; 
+        z-index: 1001; /* Ensure it is above the navbar */
+        box-shadow: 0 0 10px #781b91, 0 0 20px #781b91;
+        animation: glow 1.5s infinite alternate;
+    ">
+    Back
+</button>
+
+    <div class="content">
+        <div class="section">
+            <h2 style="color: #db2424;"> 1 Inventory Management </h1>
+           <p>In the industrial sector managing the huge amount of data is the major challenge ,here we can use 
+            Binary search to quickly locate specific items in large databases. It reduces the time spent searching compared to linear search,
+             which is crucial for maintaining inventory 
+           <br>
+           <br>
+           <img src="https://d18l82el6cdm1i.cloudfront.net/uploads/bePceUMnSG-binary_search_gif.gif" alt="Binary search gif" style="width: 300px;">
+           <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/binary.cpp">Binary search algorithm</a></h3>
+            
+        </div>
+
+
+
+
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;"> Manufacturing Process Optimization </h3>
+            <p>To Sorting raw materials or parts based on type, size, or batch number.
+                Purpose: Efficient allocation of resources and parts to various production lines, ensuring smooth workflow and minimizing bottlenecks
+                we use quick sort 
+                </p>
+              
+            <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif" srcset="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif 1x" alt=" ">
+
+             <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/quick.cpp">Quick sort algorithm</a></h3>
+            
+        </div>
+        
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;"> Leak Detection in Water Networks </h3>
+            <p> DFS can be used to traverse the network and track water flow paths. By exploring all possible routes and identifying sudden 
+            drops in pressure or unusual consumption patterns, DFS can help locate areas where leaks might be occurring.</p>
+
+            <br>
+            <img src="https://d18l82el6cdm1i.cloudfront.net/uploads/mf7THWHAbL-mazegif.gif" 
+     srcset="https://d18l82el6cdm1i.cloudfront.net/uploads/mf7THWHAbL-mazegif.gif 1x" 
+     alt="DFS is a great way to solve mazes and other puzzles that have a single solution." 
+     style="width: 300px;">
+            <br> <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/DSF.cpp">DSF algorithm</a></h3>
+            
+        </div>
+
+        <div class="section">
+            <h2></h2>
+            <h3 style="color: #db2424;">Energy Consumption Data Management</h3>
+            <p>A Min-Heap or Max-Heap can be used to manage the scheduling of energy distribution. In this case, devices or regions needing energy can be stored as nodes in a heap, sorted based on priority 
+              and we can use  insertion sort for storing the dat in sorted order</p><br>
+              <img src="https://d18l82el6cdm1i.cloudfront.net/uploads/uv9rgMfetq-heapsort-example.gif" srcset="https://d18l82el6cdm1i.cloudfront.net/uploads/uv9rgMfetq-heapsort-example.gif 1x" alt="  ">
+            
+             <h3> for code click on <a style="color: #35fb42;" href="/topic.github.io/blocks/businesscases/heapsort.cpp">Heap sort algorithm</a></h3>
+            
+        </div>
+       
+
+    </div>
+</body>
+</html>
