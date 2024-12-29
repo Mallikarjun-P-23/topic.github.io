@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Summary</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #f9f9fb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #910202;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #dd1009;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #213704;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        strong {
+            color: #212529;
+        }
+
+        /* Containers */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .prat {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f2e1d2;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .agriculture {
+            background-color: #e6ffe6;
+            color: #213704;
+        }
+        
+         .agriculture h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #015a29;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .agriculture h2{
+            text-align: center;
+            margin-top: 30px;
+            background-color: #50851d;
+            padding: 10px;
+            color: #eceff2;
+            border-radius: 4px;
+            border-bottom: 4px solid #3a6715;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            padding-top:1px ;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container2 {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #eadff4;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #781b91;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .nav-list a:hover {
+            background-color: #d8a6de;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #868e96;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button-container button {
+            background-color: #781b91;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button-container button:hover {
+            background-color: #d8a6de;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/home/home.html">Home</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/index.html">Project Introduction</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+    <div class="container2">
+        <div class="button-container">
+            <button onclick="window.history.back();">Back</button>
+            <button onclick="window.location.href='/topic.github.io/blocks/businesscases/prat.html';">Agriculture case study</button>
+        </div>
+    <section>
+        <div class="prat">
+            <h1>Marketing Strategies</h1>
+            <h2>SDG Mapping</h2>
+            <div class="container">
+                <h3>SDG 8: Decent Work and Economic Growth</h3>
+                <p><b>Target 8.2:</b> Achieve higher levels of economic productivity through diversification, technological upgrading, and innovation.</p>
+                <ul>
+                    <li><b>Indicator 8.2.1:</b> Annual growth rate of real GDP per employed person.</li>
+                </ul>
+                <p><b>Target 8.3:</b> Promote development-oriented policies that support productive activities and decent job creation.</p>
+                <ul>
+                    <li><b>Indicator 8.3.1:</b> Proportion of informal employment in non-agriculture sectors.</li>
+                </ul>
+            </div>
+            <div class="container">
+                <h3>SDG 9: Industry, Innovation, and Infrastructure</h3>
+                <p><b>Target 9.3:</b> Increase the access of small-scale industrial and other enterprises to financial services, including affordable credit.</p>
+                <ul>
+                    <li><b>Indicator 19.3.1:</b> Proportion of small-scale industries in total industry value added.</li>
+                    <li><b>Indicator 19.3.2:</b> Proportion of small-scale industries with a loan or line of credit.</li>
+                </ul>
+            </div>
+            <div class="container">
+                <h3>SDG 12: Responsible Consumption and Production</h3>
+                <p><b>Target 12.6:</b> Encourage companies to adopt sustainable practices and integrate sustainability information into their reporting cycle.</p>
+                <ul>
+                    <li><b>Indicator 12.6.1:</b> Number of companies publishing sustainability reports.</li>
+                </ul>
+                <p><b>Target 12.8:</b> Ensure that people everywhere have relevant information and awareness for sustainable development.</p>
+                <ul>
+                    <li><b>Indicator 12.8.1:</b> Extent to which global citizenship education and education for sustainable development are mainstreamed.</li>
+                </ul>
+            </div>
+            <h2>RELEVANT PROBLEMS AND ALGORITHMS</h2>
+            <div class="container">
+                <h3>In our designed city, "SWARGANSH".</h3>
+                <strong>PROBLEM:</strong><p>How can we identify the most popular or trending products that would attract customers?</p>
+                <strong>SOLUTION:</strong><p>The main focus of marketing is understanding customer needs, which can be achieved by identifying the most popular products and advertising them effectively. This can be done by sorting products based on the highest sales, allowing you to prioritize the most in-demand items. One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/merge.cpp">MERGE SORT</a>.</p>
+            </div>
+            <div class="container">
+                <strong>PROBLEM:</strong><p>How can we find the shortest distance from the source to the destination for product delivery to enhance customer reliability?</p>
+                <strong>SOLUTION:</strong><p>The market is highly competitive, and to sustain success, one must be the best service provider. To minimize customer wait times, the delivery of items must be fast. This can be achieved by identifying the shortest distance between the source and destination, ensuring quicker and more efficient deliveries. One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/dijkstra.cpp" >Dijkstra's Algorithm</a>.</p>
+            </div>
+            <div class="container">
+                <strong>PROBLEM:</strong><p>How can we optimize warehouse storage by organizing items based on categories and size?</p>
+                <strong>SOLUTION:</strong><p>This problem can be solved using the <b>Quick Sort</b> algorithm. By sorting items based on categories and sizes, we can optimize storage space and increase efficiency in warehouse operations. <a href="/topic.github.io/blocks/businesscases/quick.cpp">Quick Sort</a> is efficient in this case, especially when there is a need to sort large datasets.</p>
+            </div>
+
+            <div class="container">
+                <strong>PROBLEM:</strong><p>How can we allocate resources to different departments within a company while ensuring minimal waste?</p>
+                <strong>SOLUTION:</strong><p>This problem is a classic example of a <b>Greedy Algorithm</b>. By allocating resources greedily to departments based on their needs (e.g., prioritizing departments with higher demand), we can ensure that resources are used effectively, minimizing waste. This approach can be implemented using a greedy algorithm to make optimal local choices.</p>
+            </div>
+            <div class="container">
+                <strong>PROBLEM:</strong><p>How can we set the optimal price for a product in a competitive market?</p>
+                <strong>SOLUTION:</strong><p>We can solve this problem using <b>Greedy Algorithm</b> by incrementally adjusting the price of a product based on market demand, competitor prices, and customer willingness to pay. This method optimizes the pricing strategy in real-time without the need for exhaustive search or backtracking.</p>
+                <p>One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/greedyPricing.cpp">Greedy Pricing Strategy</a>.</p>
+             </div>
+             <div class="container">
+                <strong>PROBLEM:</strong><p>How can we efficiently identify the target customers for a new product based on past buying behaviors?</p>
+                <strong>SOLUTION:</strong><p>Using a <b>Divide and Conquer</b> approach, we can divide the customer data into smaller segments based on attributes like age, gender, and past purchases. By applying this technique, we can optimize the identification of customer groups that are most likely to purchase a new product.</p>
+                <p>One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/divideConquer.cpp">Divide and Conquer Approach for Targeting Customers</a>.</p>
+             </div>
+           <div class="container">
+                <strong>PROBLEM:</strong><p>How can we identify the most effective marketing channels based on past campaign performance?</p>
+                <strong>SOLUTION:</strong><p>By using a <b>Backtracking</b> approach, we can explore different combinations of marketing channels and evaluate their performance. If we find a combination that exceeds expectations, we can select that strategy for future campaigns.</p>
+                <p>One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/backtrackingChannels.cpp">Backtracking for Marketing Channels</a>.</p>
+             </div>
+                <div class="container">
+                    <strong>PROBLEM:</strong><p>How can we find the most efficient route when delivering products to multiple destinations in a city?</p>
+                    <strong>SOLUTION:</strong><p>We can apply a <b>Dynamic Programming</b> approach, particularly the <b>Floyd-Warshall Algorithm</b>, to determine the shortest delivery route for multiple destinations. This algorithm helps in optimizing the routes by finding the shortest paths between all pairs of locations, ensuring that the delivery process is as efficient as possible.</p>
+                    <p>One of the efficient algorithms is <a href="/topic.github.io/blocks/businesscases/floydWarshall.cpp">Floyd-Warshall for Delivery Routes</a>.</p>
+                </div>
+          
+    
+
+            <blockquote>"Marketing is not a task, it is an ongoing process that requires constant attention and adaption." <b>- Jay Baer</b></blockquote>
+        </div>
+    </section>
+</div>
+</body>
+</html>
